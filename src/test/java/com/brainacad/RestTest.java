@@ -175,7 +175,7 @@ public class RestTest {
         System.out.println("Response Code : " + statusCode);
         Assert.assertEquals("Response status code should be 400", 400, statusCode);
     }
-  /*  @Test//POST метод
+   @Test//POST метод
     public void checkPostResponseStatusCodeLoginSUCCESSFUL() throws IOException {
         String endpoint="/api/login";
 
@@ -197,5 +197,5 @@ public class RestTest {
 
         //List<String> list = new ArrayList<>();
         //list.removeIf(elem->elem.contains("x"));
-    }*/
+    }
 }
