@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -174,12 +175,16 @@ public class RestTest {
         System.out.println("Response Code : " + statusCode);
         Assert.assertEquals("Response status code should be 400", 400, statusCode);
     }
-    @Test//POST метод
+  /*  @Test//POST метод
     public void checkPostResponseStatusCodeLoginSUCCESSFUL() throws IOException {
         String endpoint="/api/login";
 
         //создаём тело запроса
-        String requestBody="{\"email\": \"peter@klaven\",\"password\": \"cityslicka\"}";
+        String requestBody="{\n" +
+                "    \"email\": \"peter@klaven\",\n" +
+                "    \"password\": \"cityslicka\"\n" +
+                "}";
+        //String requestBody="{\"email\": \"peter@klaven\",\"password\": \"cityslicka\"}";
 
         //Выполняем REST POST запрос с нашими параметрами
         // и сохраняем результат в переменную response.
@@ -189,5 +194,8 @@ public class RestTest {
         int statusCode = response.getStatusLine().getStatusCode();
         System.out.println("Response Code : " + statusCode);
         Assert.assertEquals("Response status code should be 200", 200, statusCode);
-    }
+
+        //List<String> list = new ArrayList<>();
+        //list.removeIf(elem->elem.contains("x"));
+    }*/
 }
